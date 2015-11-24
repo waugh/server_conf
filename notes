@@ -1,0 +1,20 @@
+Directory  names  c0 and c1 stand for case zero and case one, where case zero is
+"before" and case one is "after" the changes are made to the  system  configura-
+tion.  These directories mirror the root directory with regard to changed files.
+So for example, if I have to change /etc/hosts, I put the version of  /etc/hosts
+that came with the system in c0/etc/hosts, and my version in c1/etc/hosts.  If I
+have  to change /etc/nginx/nginx.conf, I put the version that came with nginx in
+c0/etc/nginx/nginx.conf and I put my modified version in c1/etc/nginx/nginx.conf
+.
+
+http://sirupsen.com/setting-up-unicorn-with-nginx/
+
+http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch21_:_Configuring_Linux_Mail_Servers#Introduction
+
+Postfix is now set up with a default configuration.  If you need to make 
+changes, edit
+/etc/postfix/main.cf (and others) as needed.  To view Postfix configuration
+values, see postconf(1).
+
+After modifying main.cf, be sure to run '/etc/init.d/postfix reload'.
+

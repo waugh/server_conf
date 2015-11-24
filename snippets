@@ -1,0 +1,11 @@
+sudo useradd -s /sbin/nologin -r nginx
+sudo addgroup web
+sudo usermod -a -G web nginx
+sudo apt-get install postfix
+sudo adduser static
+sudo adduser static adm
+sudo adduser static sudo
+sudo adduser rbenv
+sudo adduser rbenv adm
+sudo adduser rbenv sudo
+
