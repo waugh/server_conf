@@ -4,7 +4,7 @@
     # A staging site for Women for Peace and Justice in Iran.
 
     # enable one of the following if you're on Linux or FreeBSD
-    listen 80 default_server deferred; # for Linux
+    listen 80  ; # for Linux
     # listen 80 default_server accept_filter=httpready; # for FreeBSD
 
     # If you have IPv6, you'll likely want to have two separate listeners.
@@ -16,7 +16,7 @@
     # listen [::]:80 ipv6only=on; # deferred or accept_filter recommended
 
     client_max_body_size 4G;
-    server_name w4pji.jackwaugh.com
+    server_name w4pji.jackwaugh.com;
 
     # ~2 seconds is often enough for most folks to parse HTML/CSS and
     # retrieve needed images/icons/frames, connections are cheap in
